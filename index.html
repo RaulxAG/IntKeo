@@ -30,13 +30,42 @@
         </div>
     </header>
 
-    <main class="container ml-auto bg-light">
-        <p>Esto es un parrafo</p>
+    <main id="main" class="container ml-auto bg-light">
+        
     </main>
 
     <script>
+
+        function generarTarjetas() {
+        const tarjetasContainer = document.getElementById('main');
+
+            for (let i = 1; i <= 6; i++) {
+                const tarjeta = document.createElement('div');
+                tarjeta.className = 'tarjeta';
+                tarjeta.style.width = "240px";
+
+                const imagen = document.createElement('img');
+                var img = "img/producto"+i+".png"
+                
+                imagen.src = img;
+
+                imagen.style.width = "200px";
+                imagen.style.display = "flex";
+                imagen.style.margin = "0 auto";
+                
+                tarjeta.appendChild(imagen);
+                tarjetasContainer.appendChild(tarjeta);
+                
+                tarjetasContainer.style.paddingTop = "20px";
+                tarjetasContainer.style.paddingBottom = "20px";
+                tarjetasContainer.style.boxShadow = "0px 6px 10px rgba(0, 0, 0, 0.3)";
+            }
+        }
+
+        window.addEventListener('load', generarTarjetas);
         
     </script>
+    
 </body>
 </html>
 
