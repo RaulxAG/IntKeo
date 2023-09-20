@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecera {
+    background-color: rgb(232, 225, 165);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.cabecera__titulo {
+    color: rgb(67, 68, 69);
+}
+
+.cabecera__navegacion {
+    display: flex;
+    gap: 25px;
+    margin-right: 10px;
+}
+
+.navegacion__enlace {
+    color: rgb(67, 68, 69);
+    text-decoration: none;
+    font-size: large;
+    font-weight: 400;
+    width: 95px;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navegacion__enlace:hover {
+    color: whitesmoke;
+    background-color: #b4af80;
+}
