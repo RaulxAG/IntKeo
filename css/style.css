@@ -33,7 +33,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.navegacion__enlace:hover {
+.seleccionado, .navegacion__enlace:hover {
     color: whitesmoke;
     background-color: #b4af80;
 }
@@ -55,4 +55,12 @@ main {
 
 .tarjeta:hover {
     transform: scale(1.05);
+}
+
+.pie {
+    margin-top: 15px;
+}
+
+.pie h4 {
+    text-decoration: underline;
 }
